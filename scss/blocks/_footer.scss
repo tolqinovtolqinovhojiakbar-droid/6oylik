@@ -71,6 +71,10 @@
    &__cardd{
     display: none;
    }
+
+   &__button{
+    display: none;
+   }
 }
 
 
@@ -127,7 +131,8 @@
         }
 
         &__button{
-            margin-left: 700px;
+            margin-left: 650px;
+            display: flex;
         }
 
         &__button:hover{

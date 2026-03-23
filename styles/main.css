@@ -979,6 +979,9 @@
 .footer__cardd {
   display: none;
 }
+.footer__button {
+  display: none;
+}
 
 @media (min-width: 1240px) {
   .footer__card--cards {
@@ -1021,7 +1024,8 @@
     align-items: center;
   }
   .footer__button {
-    margin-left: 700px;
+    margin-left: 650px;
+    display: flex;
   }
   .footer__button:hover {
     transform: scale(1.1);
