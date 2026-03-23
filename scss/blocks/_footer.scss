@@ -1,0 +1,144 @@
+.footer{
+  &__card{
+    display: flex;
+    align-items: center;
+    color: rgba(153, 153, 153, 1);
+  }
+
+  &__img{
+    margin-left: 36px;
+  }
+
+  &__info{
+    margin-top: 50px;
+    margin-left: 16px;
+  }
+
+  &__image{
+    margin-left: 180px;
+  }
+
+  &__cards{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 70px;
+    font-size: 14px;
+  }
+
+  &__us{
+    color: rgba(153, 153, 153, 1);
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+
+  &__ser{
+     color: rgba(153, 153, 153, 1);
+     font-size: 16px;
+  }
+
+  &__cardss{
+    font-size: 14px;
+  }
+
+  &__home{
+     color: rgba(153, 153, 153, 1);
+     font-size: 16;
+  }
+
+  &__about{
+     color: rgba(153, 153, 153, 1);
+     font-size: 16px;
+  }
+
+  &__pro{
+     color: rgba(153, 153, 153, 1);
+     font-size: 16px;
+  }
+
+  &__infoss{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+   &__cardd{
+    display: none;
+   }
+}
+
+
+
+@include mobile{
+    .footer{
+        &__card--cards{
+            display: none;
+        }
+
+        &__color{
+            color: white;
+        }
+
+        &__whit{
+            color: white;
+        }
+
+        &__proper{
+            color: white;
+        }
+
+        &__servic{
+            color: white;
+        }
+
+        &__contact{
+            color: white;
+        }
+
+        &__cardd{
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 100px;
+        }
+
+        &__color--img{
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        &__imgg{
+            margin-left: 600px;
+        }
+
+        &__data{
+            margin-left: 80px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__button{
+            margin-left: 700px;
+        }
+
+        &__button:hover{
+            transform: scale(1.1);
+            transition: 2s;
+            box-shadow:
+        rgba(3, 66, 255, 0.25) 0px 90px 90px,
+        rgba(4, 8, 244, 0.12) 0px -12px 30px,
+        rgba(14, 1, 255, 0.12) 0px 20px 100px,
+        rgba(21, 1, 246, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px 100px 54px;
+        }
+        }
+    }

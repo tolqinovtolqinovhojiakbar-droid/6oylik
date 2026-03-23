@@ -1,0 +1,244 @@
+.asked{
+
+    &__wrapper{
+        color: white;
+    }
+
+    &__btn{
+        padding: 14px 20px;
+        border: 1px solid white;
+        background: black;
+        border-radius: 8px;
+        color: white;
+        margin-left: 16px;
+    }
+
+    &__card{
+        display: flex;
+        color: white;
+        margin-left: 36px;
+    }
+
+    &__cards{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__infoss{
+        display: none;
+    }
+
+    &__ques{
+        font-size: 28px;
+        margin-left: 16px;
+    }
+
+    &__img--image{
+        margin-top: 61px;
+        margin-left: 8px;
+    }
+
+    &__findd{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+        margin-left: 16px;
+    }
+
+    &__how{
+    margin-top: 70px;
+    margin-left:46px ;
+    font-size: 18px;
+    }
+
+    &__lorem{
+        color: rgba(153, 153, 153, 1);
+        margin-left: 46px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    &__btn--button{
+        padding: 14px 115px;
+        color: white;
+        background: black;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 46px;
+    }
+
+    &__for--info{
+        display: none;
+    }
+
+     &__cardsss{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    &__all{
+        padding: 14px 20px;
+        border-radius: 8px;
+        background: black;
+        border: 1px solid white;
+        color: white;
+        margin-left: 16px;
+        display: block;
+    }
+
+    &__img{
+        margin-left: 79px;
+    }
+
+    &__cardd{
+        display: flex;
+        align-items: center;
+        margin-left: 79px;
+    }
+
+    &__cardss{
+        display: none;
+    }
+
+    &__cardd{
+        display: flex;
+    }
+
+}
+
+@include mobile{
+   .asked{
+
+    &__cardd{
+        display: none;
+    }
+
+    &__all{
+        display: none;
+    }
+
+    &__cardsss{
+        display: none;
+    }
+
+    &__to{
+        display: none;
+    }
+
+    &__infoss{
+        display: block;
+    }
+
+    &__cards{
+        display: none;
+    }
+
+    &__image{
+        margin-left: 50px;
+        margin-top: 110px;
+    }
+
+    &__asked{
+        font-size: 48px;
+        margin-left: 90px;
+    }
+
+    &__find{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+        margin-left: 90px;
+    }
+
+    &__infos{
+        display: flex;
+    }
+
+    &__cardss{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    &__price{
+        margin-left: 90px;
+    }
+
+    &__img{
+        margin-left: 1120px;
+        gap: 10px;
+    }
+
+    &__button{
+        padding: 18px 24px;
+        background: black;
+        border: 1px solid white;
+        color: white;
+        border-radius: 8px;
+        margin-left: 120px;
+        cursor: pointer;
+    }
+
+    &__button:hover{
+         background: rgba(0, 0, 255, 0.416);
+          transform: scale(1.1);
+        transition: 2s;
+    }
+
+    &__btn--button{
+        padding: 18px 24px;
+        color: white;
+        background: black;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 46px;
+        cursor: pointer;
+    }
+
+    &__btn--button:hover{
+        transform: scale(0.9);
+        transition: 2s;
+         background: rgba(0, 0, 255, 0.416);
+    }
+
+    &__btn--btn{
+         padding: 18px 24px;
+        color: white;
+        background: black;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-top: 40px;
+        margin-left: 46px;
+        cursor: pointer;
+    }
+
+    &__btn--btn:hover{
+        background: rgba(0, 0, 255, 0.416);
+        transition: 2s;
+        transform: scale(0.9);
+    }
+
+    &__for--info{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 80px;
+    }
+
+    &__how{
+        font-size: 24px;
+    }
+
+    &__cardsss{
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    &__for:hover{
+        transform: scale(1.1);
+        transition: 2s;
+    }
+
+   }
+}

@@ -1,0 +1,249 @@
+.properties{
+    &__wrapper{
+        color: white;
+    }
+
+    &__info{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+        margin-left: 16px;
+        display: block;
+    }
+
+    &__title{
+        font-size: 28px;
+        margin-left: 16px;
+        display: block;
+    }
+
+    &__img{
+        margin-top: 61px;
+        padding-left: 8px;
+        display: flex;
+    }
+
+    &__image{
+        margin-left: 40px;
+        display: block;
+        margin-top: 40px;
+    }
+
+    &__title--info{
+        margin-left: 40px;
+        font-size: 18px;
+        display: block;
+    }
+
+    &__info--title{
+        margin-left: 40px;
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+        display: block;
+    }
+
+    &__img--image{
+        display: block;
+        margin-left: 40px;
+        padding-top: 20px;
+    }
+
+    &__price{
+        display: block;
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__price--som{
+        font-size: 18px;
+        display: block;
+    }
+
+    &__btn{
+        padding: 14px 35px;
+        background: rgba(112, 59, 247, 1);
+        border-radius: 8px;
+        border: none;
+        color: white;
+        display: block;
+    }
+
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    &__cardss{
+        display: none;
+    }
+
+}
+@include mobile{
+    .properties{
+
+        &__card--cards{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        &__u{
+            color: white;
+        }
+
+        &__button--btn{
+            padding: 14px 47px;
+            background: rgba(112, 59, 247, 1);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-left: 55px;
+            cursor: pointer;
+        }
+
+        &__button--btn:hover{
+            background: rgba(112, 59, 247, 0.456);
+            transition: 2s;
+        }
+
+        &__button{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__info--price{
+            font-size: 14px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__villa{
+            font-size: 20px;
+        }
+
+        &__a{
+            color: rgba(153, 153, 153, 1);
+            font-size: 16px;
+        }
+
+        &__card--btn{
+            border: 1px solid white ;
+            background-color: black;
+            border-radius: 12px;
+            width: 413px;
+            padding: 30px;
+        }
+
+        &__card--btn:hover{
+            transform: scale(0.9);
+            transition: 2s;
+            box-shadow:
+        rgba(3, 66, 255, 0.25) 0px 80px 55px,
+        rgba(4, 8, 244, 0.12) 0px -12px 30px,
+        rgba(14, 1, 255, 0.12) 0px 20px 100px,
+        rgba(21, 1, 246, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px 100px 54px;
+        }
+
+        &__all{
+            padding: 14px 20px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        &__all:hover{
+            transform: scale(1.1);
+            transition: 2s;
+            background: rgba(0, 0, 255, 0.355);
+        }
+
+        &__btn--button{
+            display: flex;
+            gap: 150px;
+        }
+
+        &__infos{
+            font-size: 16px;
+            margin-top:10px ;
+            margin-left: 80px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__titlee{
+            font-size: 38px;
+            margin-left: 80px;
+            margin-top: 6px;
+        }
+
+        &__design{
+            margin-top: 90px;
+            margin-left: 70px;
+        }
+
+        &__cardss{
+            display: block;
+        }
+
+        &__img--image{
+            display: none;
+        }
+
+        &__info{
+            display: none;
+        }
+
+        &__title{
+            display: none;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__image{
+            display: none;
+        }
+
+         &__title--info{
+            display: none;
+         }
+
+        &__info--title{
+            display: none;
+        }
+
+        &__imag--image{
+            display: none;
+        }
+
+        &__price{
+            display: none;
+        }
+
+        &__price--som{
+            display: none;
+        }
+
+        &__btn{
+            display: none;
+        }
+
+        &__cards{
+            display: none;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__info{
+            display: none;
+        }
+    }
+}

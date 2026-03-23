@@ -1,0 +1,214 @@
+.say{
+
+    &__wrapper{
+        color: white;
+    }
+
+    &__info{
+        display: flex;
+    }
+
+    &__img{
+        margin-left: 8px;
+        margin-top: 61px;
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 47px;
+        margin-top: 30px;
+    }
+
+    &__btn{
+        padding: 14px 20px;
+        border: 1px solid white;
+        background: black;
+        border-radius: 8px;
+        color: white;
+    }
+
+    &__say{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+        margin-left: 16px;
+    }
+
+    &__title{
+        font-size: 28px;
+        margin-left: 16px;
+    }
+
+    &__image--img{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__usa{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+    }
+
+    &__wade{
+        font-size: 16px;
+    }
+
+    &__cardss{
+        margin-top: 40px;
+        margin-left: 46px;
+        border-radius: 8px;
+        display: block;
+    }
+
+    &__with{
+        font-size: 14px;
+    }
+
+    &__ser{
+        font-size: 18px;
+    }
+
+    &__button{
+        display: none;
+    }
+
+    &__the{
+        display: none;
+    }
+
+    &__sayy{
+        display: none;
+    }
+
+    &__price{
+        display: none;
+    }
+
+    &__img--image{
+        display: none;
+    }
+
+    &__image{
+        display: none;
+    }
+
+    &__infos{
+        display: none;
+    }
+
+    &__infoss{
+        display: none;
+    }
+
+}
+
+@include mobile{
+    .say{
+
+        &__ir{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        &__ice{
+            margin-top: 40px;
+            font-size: 24px;
+        }
+
+        &__image--img{
+            margin-top: 40px;
+        }
+
+        &__cards--info{
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            gap: 30px;
+        }
+
+        &__infoss{
+            display: block;
+        }
+
+        &__cardss{
+        display: none;
+        }
+
+        &__our{
+            display: none;
+        }
+
+        &__card{
+            display: none;
+        }
+
+        &__infos{
+            display: flex;
+            color: white;
+            margin-top: 50px;
+        }
+
+        &__price{
+            font-size: 20px;
+            margin-left: 90px;
+            display: block;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__u{
+            color: white;
+        }
+
+        &__image{
+            margin-left: 1110px;
+            display: block;
+        }
+
+        &__img--image{
+            margin-top: 110px;
+            margin-left: 50px;
+            display: flex;
+        }
+
+        &__sayy{
+            font-size: 48px;
+            margin-left: 90px;
+            display: block;
+        }
+
+        &__the{
+            font-size: 18px;
+            color: rgba(153, 153, 153, 1);
+            margin-left: 90px;
+            display: block;
+        }
+
+        &__cards{
+            display: flex;
+        }
+
+        &__button{
+            padding: 18px 24px;
+            background: black;
+            color: white;
+            border: 1px solid white;
+            border-radius: 8px;
+            margin-left: 20px;
+            cursor: pointer;
+            display: block;
+        }
+
+        &__button:hover{
+            background: rgba(0, 0, 255, 0.323);
+            transition: 2s;
+            transform: scale(1.1);
+        }
+
+        &__cardss:hover{
+            transform: scale(1.1);
+            transition: 2s;
+        }
+    }
+}
