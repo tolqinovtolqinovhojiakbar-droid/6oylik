@@ -10,7 +10,6 @@
         background: black;
         border-radius: 8px;
         color: white;
-        margin-left: 16px;
     }
 
     &__card{
@@ -21,6 +20,7 @@
 
     &__cards{
         display: flex;
+        align-items: center;
         margin-top: 30px;
     }
 
