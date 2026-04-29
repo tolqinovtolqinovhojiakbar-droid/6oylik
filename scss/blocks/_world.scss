@@ -1,0 +1,162 @@
+.world{
+    &__title{
+        color: white;
+        margin-left: 17px;
+    }
+
+    &__info{
+        font-size: 14px;
+        margin-left: 17px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__where{
+        color: white;
+        font-size: 14px;
+    }
+
+    &__aeas{
+        color: white;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    &__infoo{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__u{
+        color: white;
+    }
+
+    &__img{
+        margin-top: 70px;
+    }
+
+    &__btn{
+        border: none;
+        color: white;
+        border-radius: 8px;
+        margin-left: 35px;
+        padding: 14px 34px;
+        background-color: rgba(112, 59, 247, 1);
+    }
+
+    &__color{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__price{
+        color: white;
+    }
+
+    &__div{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+
+    &__card{
+        width: 357px;
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 17px;
+        border-radius: 12px;
+        border: 1px solid white;
+    }
+
+    &__divv{
+        gap:100px;
+        display: flex;
+        color: white;
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__none{
+        display: block;
+    }
+
+    &__cards{
+        display: none;
+    }
+
+    &__dis{
+        display: none;
+    }
+
+    &__our{
+        display: none;
+    }
+
+    &__imagee{
+        display: none;
+    }
+
+    &__divvv{
+        display: none;
+    }
+}
+
+@include mobile{
+    .world{
+        &__none{
+            display: none;
+        }
+
+        &__cards{
+            gap: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__imagee{
+            display: block;
+            margin-top: 150px;
+        }
+
+        &__dis{
+            display: block;
+            margin-left: 26px;
+            color: white;
+        }
+
+        &__our{
+            display: block;
+            margin-left: 26px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__card{
+        width: 357px;
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 17px;
+        border-radius: 12px;
+        border: 1px solid white;
+        }
+
+        &__image{
+            width: 317px;
+        }
+
+        &__divvv{
+            gap: 1030px;
+            font-size: 16px;
+            display: flex;
+            color: white;
+            margin-top: 50px;
+            justify-content: center;
+        }
+
+        &__im{
+            width: 44px;
+            margin-left: 5px;
+        }
+    }
+}

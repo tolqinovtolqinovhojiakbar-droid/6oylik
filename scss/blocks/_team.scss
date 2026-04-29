@@ -1,0 +1,121 @@
+.team{
+    &__info{
+        display: block;
+        font-size: 14px;
+        margin-left: 16px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__img{
+        margin-top: 61px;
+        margin-left: 8px;
+    }
+
+    &__title{
+        color: white;
+        font-size: 28px;
+        margin-left: 16px;
+    }
+    
+    &__btn{
+        top: 380px;
+        right: 62px;
+        position: absolute;
+        border-radius: 100px;
+    }
+
+    &__inp{
+        margin-bottom: 20px;
+        background: black;
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        padding: 22px 76px 18px 24px;
+    }
+
+    &__color{
+        width: 358px;
+        padding: 20px;
+        color: white;
+        display: block;
+        margin-top: 61px;
+        margin-left: 16px;
+        text-align: center;
+        position: relative;
+        border-radius: 12px;
+        align-items: center;
+        justify-content: center;
+        background: rgba(54, 53, 53, 0.283);
+        border: 1px solid rgba(255, 255, 255, 0.183);
+    }
+
+
+    &__for{
+        font-size: 14px;
+        margin-bottom: 16px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__max{
+        font-size: 18px;
+    }
+
+
+    &__image{
+        margin-top: 10px;
+    }
+
+    &__infoo{
+        display: none;
+    }
+}
+
+@include mobile{
+    .team{
+        &__cards{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__color{
+            width: 340px;
+        }
+
+        &__color:hover{
+            transition: 2s;
+            transform: scale(0.9);
+             box-shadow:
+          rgba(3, 66, 255, 0.25) 0px 80px 55px,
+          rgba(4, 8, 244, 0.12) 0px -12px 30px,
+          rgba(14, 1, 255, 0.12) 0px 20px 100px,
+          rgba(21, 1, 246, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px 100px 54px;
+        }
+
+        &__image{
+            width: 300px;
+        }
+
+        &__btn{
+            top: 368px;
+            left:235px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        &__title{
+            font-size: 48px;
+            margin-left: 50px;
+        }
+
+        &__info{
+            display: none;
+        }
+
+        &__infoo{
+            display: block;
+            margin-left: 50px;
+            color: rgba(153, 153, 153, 1);
+        }
+        
+    }
+}

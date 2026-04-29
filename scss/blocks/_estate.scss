@@ -1,0 +1,54 @@
+.estate{
+
+    &__title{
+        display: block;
+        color: white;
+        font-size: 28px;
+        margin-left: 17px;
+    }
+
+    &__info{
+        display: block;
+        font-size: 14px;
+        margin-left: 17px;
+        margin-bottom: 40px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__titlee{
+        display: none;
+    }
+
+    &__infoo{
+        display: none;
+    }
+}
+
+@include mobile {
+    .estate{
+
+        &__title{
+            display: none;
+        }
+
+        &__info{
+            display: none;
+        }
+
+        &__titlee{
+            display: block;
+            color: white;
+            font-size: 48px;
+            margin-top: 150px;
+            margin-left: 37px;
+        }
+
+        &__infoo{
+            display: block;
+            font-size: 18px;
+            margin-left: 37px;
+            margin-bottom: 100px;
+            color: rgba(153, 153, 153, 1);
+        }
+    }
+}

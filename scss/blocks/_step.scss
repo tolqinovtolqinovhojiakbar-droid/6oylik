@@ -1,0 +1,202 @@
+.step{
+    &__wrapper{
+        color: white;
+    }
+
+    &__info{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__title{
+        margin-top: 40px;
+        margin-left: 17px;
+    }
+
+    &__infoo{
+        display: block;
+        font-size: 14px;
+        margin-left: 17px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__the{
+        font-size: 28px;
+        margin-left: 17px;
+        display: block;
+    }
+
+    &__img{
+        margin-top: 61px;
+        margin-left: 9px;
+        display: block;
+    }
+
+    &__cards{
+        display: block;
+    }
+
+    &__card{
+        width: 357px;
+        padding: 10px;
+        margin-left: 17px;
+        border-radius: 12px;
+        background:rgba(38, 38, 38, 0.703) ;
+        border: 1px solid rgba(68, 60, 60, 0.323);
+    }
+
+    &__cardss{
+        display: none;
+    }
+
+    &__info--title{
+        display: none;
+    }
+
+    &__title--info{
+        display: none;
+    }
+
+    &__image{
+        display: none;
+    }
+}
+
+@include mobile{
+    .step{
+        &__cards{
+            display: none;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__the{
+            display: none;
+        }
+
+        &__infoo{
+            display: none;
+        }
+
+        &__image{
+            display: block;
+            margin-top: 110px;
+        }
+
+        &__info--title{
+            font-size: 48px;
+            margin-left: 50px;
+            display: block;
+        }
+
+        &__title--info{
+            display: block;
+            font-size: 18px;
+            margin-left: 50px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+
+        &__cardd{
+            padding: 20px;
+            border-radius: 12px;
+            background:rgba(38, 38, 38, 0.245) ;
+            border: 1px solid rgba(68, 60, 60, 0.323);
+        }
+
+        &__cardss{
+            gap: 50px;
+            display: flex;
+            margin-top: 80px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__your{
+            color: rgba(153, 153, 153, 1);
+            font-size: 16px;
+        }
+
+
+        .step__cardd {
+  position: relative;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* soft gradient light */
+.step__cardd::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(0, 212, 255, 0.25),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* hover lift + glow */
+.step__cardd:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 
+    0 10px 30px rgba(0,0,0,0.5),
+    0 0 40px rgba(0, 195, 255, 0.493);
+  border-color: rgba(0,212,255,0.4);
+}
+
+.step__cardd:hover::before {
+  opacity: 1;
+}
+
+/* text */
+.step__cardd p:first-child {
+  font-size: 14px;
+  color: #8a8a8a;
+  margin-bottom: 8px;
+}
+
+.step__cardd p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.step__your {
+  color: #bcbcbc;
+  line-height: 1.6;
+}
+
+/* hover text effect */
+.step__cardd:hover p:nth-child(2) {
+  color: #00d4ff;
+}
+
+/* subtle border glow animation */
+.step__cardd::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 20px;
+  background: linear-gradient(120deg, transparent, #00d4ff, transparent);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.step__cardd:hover::after {
+  opacity: 0.6;
+  filter: blur(8px);
+}
+    }
+}

@@ -1,0 +1,253 @@
+.clients{
+
+    &__wrapper{
+        color: white;
+    }
+
+    &__img{
+        display: block;
+        margin-top: 61px;
+    }
+
+    &__info{
+        display: block;
+        font-size: 14px;
+        margin-left: 16px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__title{
+        display: block;
+        font-size: 28px;
+        margin-left:16px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__card{
+        display: flex;
+        margin-top: 10px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__abc{
+        display: block;
+        margin-left: 41px;
+    }
+
+    &__data{
+        display: block;
+        margin-top: 50px;
+        font-size: 14px;
+        margin-left: 41px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__btn{
+        display: block;
+        color: white;
+        border-radius: 8px;
+        margin-left: 41px;
+        margin-bottom: 10px;
+        padding: 14px 115px;
+        border: 1px solid rgba(255, 255, 255, 0.573);
+        background-color: black;
+    }
+
+
+    &__cards{
+        gap: 31px;
+        display: flex;
+        margin-left: 41px;
+    }
+
+    &__smile{
+        width: 309px;
+        padding: 20px;
+        display: block;
+        margin-left: 41px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(38, 38, 38, 0.566);
+    }
+
+    &__infoo{
+        display: block;
+        font-size: 14px;
+    }
+
+    &__they{
+        display: block;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__infos{
+        gap: 80px;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    &__cardss--card{
+        display: none;
+    }
+
+    &__image{
+        display: none;
+    }
+
+    &__our{
+        display: none;
+    }
+
+    &__infoss{
+        display: none;
+    }
+}
+
+
+@include mobile{
+    .clients{
+
+        &__simle{
+            display: none;
+        }
+
+        &__abc{
+            display: none;
+        }
+
+        &__data{
+            display: none;
+        }
+
+        &__btn{
+            display: none;
+        }
+
+        &__they{
+            display: none;
+        }
+
+        &__infoo{
+            display: none;
+        }
+
+        &__infos{
+            display: none;
+        }
+
+        &__cards{
+            display: none;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__title{
+            display: none;
+        }
+
+        &__info{
+            display: none;
+        }
+
+        &__cardss{
+            display: flex;
+        }
+
+        &__button{
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        &__our{
+            display: block;
+            font-size: 48px;
+            margin-left: 50px;
+        }
+
+        &__image{
+            display: block;
+            margin-top: 110px;
+        }
+
+        &__infoss{
+            display: block;
+            font-size: 18px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__cards--card{
+            width: 703px;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.413);
+            background-color: rgba(38, 38, 38, 0.474);
+        }
+
+        &__cards--card:hover{
+            transition: 2s;
+            transform: scale(0.9);
+             box-shadow:
+          rgba(3, 66, 255, 0.25) 0px 80px 55px,
+          rgba(4, 8, 244, 0.12) 0px -12px 30px,
+          rgba(14, 1, 255, 0.12) 0px 20px 100px,
+          rgba(21, 1, 246, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px 100px 54px;
+        }
+
+        &__o{
+            font-size: 18px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__said{
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__btnn{
+            color: white;
+            padding:18px 24px ;
+            margin-left: 280px;
+            border-radius: 12px;
+            border: 1px solid white;
+            background-color: black;
+        }
+
+        &__btnn:hover{
+            transition: 2s;
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 255, 0.608);
+        }
+
+        &__card--cards{
+            margin-top: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.579);
+            background-color: rgba(38, 38, 38, 1);
+        }
+
+        &__cardss--card{
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+}

@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estate</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/fontawesome.min.css"
+            rel="stylesheet"
+    />
  </head>
  <body>
-    <nav class="nav">
+    <nav class="nav__header">
         <div class="container">
             <div class="nav__wrapper">
-                 <a href="#"><img class="nav__img--image" src="./aseets/icon/Logo (2).svg" alt=""></a>
+                 <a href="./"><img class="nav__img--image" src="./aseets/icon/Logo (2).svg" alt=""></a>
                  <ul class="nav__ul">
-                    <li><a href="#"><span>Home</span></a></li>
-                    <li><a href="#"><span>About</span></a></li>
-                    <li><a href="#"><span>Properties</span></a></li>
-                    <li><a href="#"><span>Services</span></a></li>
+                    <li><a href="./index.html"><span>Home</span></a></li>
+                    <li><a href="./about.html"><span>About</span></a></li>
+                    <li><a href="./Properties.html"><span>Properties</span></a></li>
+                    <li><a href="./sevic.html"><span>Services</span></a></li>
                  </ul>
-                 <button class="nav__btn">Contact Us</button>
+               <!-- From Uiverse.io by zjssun --> 
+               <button class="nav__bin">Contact Us</button>
+
+                </button>
                  <img class="nav__img" src="./aseets/icon/Icon (1).svg" alt="">
             </div>
         </div>
@@ -81,7 +89,8 @@
                             <p class="hero__info--title">Your journey to finding the perfect property begins here. Explore our listings to find the <br>that matches your dreams.</p>
                            </div>
                             <div class="hero__button--btn">
-                                <button class="hero__btns">Learn More</button>
+                                <!-- From Uiverse.io by gharsh11032000 --> 
+                                <button class="button">Learn More</button>
                                 <button class="hero__button">Browse Properties</button>
                             </div>
                             <div class="hero__cards">
@@ -99,31 +108,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000">
                                 <img src="./aseets/images/Image (5).svg" alt="">
                             </div>
-                                <img class="hero__sub" src="./aseets/icon/Sub Container (2).svg" alt="">
+                                <img class="hero__box" src="./aseets/icon/Sub Container (2).svg" alt="">
                     </div>
                      <div class="hero__cards--img">
-                        <div class="hero__card--infoss">
+                        <div class="hero__card--infoss" data-aos="fade-up" data-aos-duration="2500">
                             <img src="./aseets/icon/Icon Container.svg" alt="">
                             <div>
                                 <p>Find Your Dream <br>Home</p>
                             </div>
                         </div>
-                        <div class="hero__card--infoss">
+                        <div class="hero__card--infoss" data-aos="fade-up" data-aos-duration="2500">
                             <img src="./aseets/icon/Icon Container (1).svg" alt="">
                             <div>
                                 <p>Unlock Property <br>Value</p>
                             </div>
                         </div>
-                        <div class="hero__card--infoss">
+                        <div class="hero__card--infoss" data-aos="fade-up" data-aos-duration="2500">
                             <img src="./aseets/icon/Icon Container (2).svg" alt="">
                             <div>
                                 <p>Effortless Property <br>Management</p>
                             </div>
                         </div>
-                        <div class="hero__card--infoss">
+                        <div class="hero__card--infoss" data-aos="fade-up" data-aos-duration="2500">
                             <img src="./aseets/icon/Icon Container (3).svg" alt="">
                             <div>
                                 <p>Smart Investments, <br>Informed Decisions</p>
@@ -138,28 +149,104 @@
                 <div class="properties__wrapper">
                     <img class="properties__img" src="./aseets/icon/Abstract Design.svg" alt="">
                     <p class="properties__title">Featured Properties</p>
-                    <p class="properties__info">Explore our handpicked selection of featured properties. <br>Each listing offers a glimpse into exceptional homes and <br>investments available through Estatein.</p>
-                    <div class="properties__card">
-                        <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
-                        <p class="properties__title--info">Rustic Retreat Cottage</p>
-                        <p class="properties__info--title">An elegant 3-bedroom, 2.5-bathroom townhouse <br>in a gated community... Read More</p>
-                    </div>
-                    <div class="properties__img--image">
-                        <img src="./aseets/icon/Container (1).svg" alt="">
-                        <img src="./aseets/icon/Container (2).svg" alt="">
-                        <div>
-                            <img src="./aseets/icon/Container (3).svg" alt="">
-                        </div>
-                    </div>
+                    <p class="properties__ex">Explore our handpicked selection of featured properties. <br>Each listing offers a glimpse into exceptional homes and <br>investments available through Estatein.</p>
                     <div class="properties__cards">
-                        <div>
-                            <p class="properties__price">Price</p>
-                            <p class="properties__price--som">$550,000</p>
-                        </div>
-                        <div>
-                            <button class="properties__btn">View Property Details</button>
-                        </div>
-                    </div>
+   <div class="properties__card">
+      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
+      <p class="properties__villa">Seaside Serenity Villa</p>
+      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
+          <div class="properties__imgg">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <div>
+                <img src="./aseets/icon/Container (3).svg" alt="">
+              </div>
+          </div>
+      <div class="properties__button">
+        <div>
+        <p class="properties__info--price">Price</p>
+        <p>$550,000</p>
+      </div>
+    <button class="properties__button--btn">View Property Details</button>
+   </div>
+  </div>
+   <div class="card">
+      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
+      <p class="properties__villa">Seaside Serenity Villa</p>
+      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
+          <div class="properties__imgg">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <div>
+                <img src="./aseets/icon/Container (3).svg" alt="">
+              </div>
+          </div>
+      <div class="properties__button">
+        <div>
+        <p class="properties__info--price">Price</p>
+        <p>$550,000</p>
+      </div>
+    <button class="properties__button--btn">View Property Details</button>
+   </div>
+  </div>
+   <div class="card">
+      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
+      <p class="properties__villa">Seaside Serenity Villa</p>
+      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
+          <div class="properties__imgg">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <div>
+                <img src="./aseets/icon/Container (3).svg" alt="">
+              </div>
+          </div>
+      <div class="properties__button">
+        <div>
+        <p class="properties__info--price">Price</p>
+        <p>$550,000</p>
+      </div>
+    <button class="properties__button--btn">View Property Details</button>
+   </div>
+  </div>
+   <div class="card">
+      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
+      <p class="properties__villa">Seaside Serenity Villa</p>
+      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
+          <div class="properties__imgg">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <div>
+                <img src="./aseets/icon/Container (3).svg" alt="">
+              </div>
+          </div>
+      <div class="properties__button">
+        <div>
+        <p class="properties__info--price">Price</p>
+        <p>$550,000</p>
+      </div>
+    <button class="properties__button--btn">View Property Details</button>
+   </div>
+  </div>
+   <div class="card">
+      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
+      <p class="properties__villa">Seaside Serenity Villa</p>
+      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
+          <div class="properties__imgg">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <img src="./aseets/icon/Container (2).svg" alt="">
+              <div>
+                <img src="./aseets/icon/Container (3).svg" alt="">
+              </div>
+          </div>
+      <div class="properties__button">
+        <div>
+        <p class="properties__info--price">Price</p>
+        <p>$550,000</p>
+      </div>
+    <button class="properties__button--btn">View Property Details</button>
+   </div>
+  </div>
+  </div>
                     <div class="properties__cardss">
                         <div>
                             <div>
@@ -271,7 +358,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="say__cards--info">
+                                    <div class="say__cards--info" data-aos="flip-down" data-aos-duration="4000">
                                         <div class="say__infoss">
                                             <img src="./aseets/icon/Container (6).svg" alt="">
                                             <p class="say__ice">Exceptional Service!</p>
@@ -284,7 +371,7 @@
                                             </div>
                                             </div>
                                         </div>
-                                        <div class="say__infoss">
+                                        <div class="say__infoss" data-aos="flip-down" data-aos-duration="2000">
                                             <img src="./aseets/icon/Container (6).svg" alt="">
                                             <p class="say__ice">Exceptional Service!</p>
                                             <p class="say__ir">Estatein provided us with top-notch service. They <br>helped us sell our property quickly and at a great <br>price. We couldn't be happier with the results. </p>
@@ -296,7 +383,7 @@
                                             </div>
                                             </div>
                                         </div>
-                                        <div class="say__infoss">
+                                        <div class="say__infoss" data-aos="flip-down" data-aos-duration="3000">
                                             <img src="./aseets/icon/Container (6).svg" alt="">
                                             <p class="say__ice">Exceptional Service!</p>
                                             <p class="say__ir">The Estatein team guided us through the entire <br>buying process. Their knowledge and commitment <br>to our needs were impressive. Thank you for your <br>support!</p>
@@ -360,17 +447,18 @@
                                 <div class="asked__for">
                                 <p class="asked__how">How do I search for properties on <br>Estatein?</p>
                                 <p class="asked__lorem">Learn how to use our user-friendly search tools <br>to find properties that match your criteria.</p>
-                                <button class="asked__btn--button">Read More</button>
+                                 <button class="asked__btn--btn">Read More</button>
                             </div>
                             <div class="asked__for">
                                 <p class="asked__how">What documents do I need to sell my <br>property through Estatein?</p>
                                 <p class="asked__lorem">Find out about the necessary documentation for <br>listing your property with us.</p>
-                                <button class="asked__btn--button">Read More</button>
+                                 <button class="asked__btn--btn">Read More</button>
                             </div>
                             <div class="asked__for">
                                 <p class="asked__how">How can I contact an Estatein agent? </p>
                                 <p class="asked__lorem">Discover the different ways you can get in touch <br>with our experienced agents.</p>
-                                <button class="asked__btn--btn">Read More</button>
+                                <!-- From Uiverse.io by adamgiebl --> 
+                                 <button class="asked__btn--button">Read More</button>
                             </div>
                             </div>
                         </div>
@@ -517,15 +605,82 @@
                     <p>@2023 Estatein. All Rights Reserved.</p>
                     <p>Terms & Conditions</p>
                    </div>
-                    <div class="footer__button">
-                        <a href="https://www.facebook.com/"><img src="./aseets/icon/Button (2).svg" alt=""></a>
-                        <a href="https://www.linkedin.com/login"> <img src="./aseets/icon/Button (3).svg" alt=""></a>
-                        <a href="https://x.com/"><img src="./aseets/icon/Button (4).svg" alt=""></a>
-                        <a href="https://www.youtube.com/"><img src="./aseets/icon/Button (5).svg" alt=""></a>
-                    </div>
+                    <!-- From Uiverse.io by firemonste_8052 --> 
+<ul class="footer__example-1">
+  <li class="icon-content">
+    <a
+      href="https://www.facebook.com/"
+      aria-label="Spotify"
+      data-social="spotify"
+      class="link"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <path
+          d="M29.059 15.085C29.058 7.322 22.764 1.028 15 1.028S0.941 7.323 0.941 15.087c0 6.989 5.1 12.787 11.781 13.875l0.081 0.011V19.15H9.232v-4.065h3.57v-3.096a4.962 4.962 0 0 1 5.329 -5.469l-0.017 -0.001c1.124 0.016 2.212 0.115 3.273 0.292l-0.126 -0.018v3.459h-1.774a2.033 2.033 0 0 0 -2.291 2.204l-0.001 -0.008v2.636h3.899l-0.623 4.065h-3.276v9.823c6.762 -1.101 11.862 -6.899 11.863 -13.888"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">Facebook</div>
+  </li>
+  <li class="icon-content">
+    <a
+      href="https://www.instagram.com/"
+      aria-label="Pinterest"
+      data-social="pinterest"
+      class="link"
+    >
+      <svg version="1.1" viewBox="0 0 100 100" xml:space="preserve">
+        <path
+          d="M60 45a15 15 0 1 0 -4.395 10.61A14.4 14.4 0 0 0 60 45.225l-0.004 -0.237zm8.1 0a23.006 23.006 0 1 1 -6.738 -16.347 22.2 22.2 0 0 1 6.742 15.96l-0.004 0.41v-0.02zm6.327 -24.022v0.008a5.4 5.4 0 1 1 -1.582 -3.818 5.177 5.177 0 0 1 1.556 3.705v0.11zm-29.4 -12.9 -4.482 -0.03q-4.072 -0.03 -6.184 0t-5.655 0.176a47.143 47.143 0 0 0 -6.312 0.638l0.273 -0.038a23.571 23.571 0 0 0 -4.362 1.136l0.16 -0.052a15.446 15.446 0 0 0 -8.52 8.452l-0.038 0.102a22.543 22.543 0 0 0 -1.065 4.062l-0.02 0.138a45 45 0 0 0 -0.597 5.96l-0.004 0.08q-0.147 3.548 -0.176 5.655t0 6.184 0.03 4.482 -0.03 4.482 0 6.184 0.176 5.655c0.075 2.193 0.292 4.275 0.638 6.312l-0.038 -0.273a23.571 23.571 0 0 0 1.136 4.362l-0.052 -0.16a15.446 15.446 0 0 0 8.452 8.52l0.102 0.038c1.192 0.446 2.606 0.82 4.062 1.065l0.138 0.02c1.758 0.308 3.84 0.525 5.955 0.597l0.08 0.004q3.548 0.147 5.655 0.176t6.184 0l4.455 -0.09 4.482 0.03q4.072 0.03 6.184 0t5.655 -0.176a47.143 47.143 0 0 0 6.312 -0.638l-0.273 0.038a23.571 23.571 0 0 0 4.362 -1.136l-0.16 0.052a15.446 15.446 0 0 0 8.52 -8.452l0.038 -0.102c0.446 -1.192 0.82 -2.606 1.065 -4.062l0.02 -0.138c0.308 -1.758 0.525 -3.84 0.597 -5.955l0.004 -0.08q0.147 -3.548 0.176 -5.655t0 -6.184 -0.03 -4.482 0.03 -4.482 0 -6.184 -0.176 -5.655a47.143 47.143 0 0 0 -0.638 -6.312l0.038 0.273a23.743 23.743 0 0 0 -1.136 -4.362l0.052 0.16a15.446 15.446 0 0 0 -8.452 -8.52l-0.102 -0.038a22.543 22.543 0 0 0 -4.062 -1.065l-0.138 -0.02a45 45 0 0 0 -5.955 -0.597l-0.08 -0.004q-3.548 -0.147 -5.655 -0.176t-6.184 0zM90 45q0 13.418 -0.3 18.574a24.9 24.9 0 0 1 -26.194 26.13l0.06 0.004q-5.157 0.3 -18.574 0.3t-18.574 -0.3A24.9 24.9 0 0 1 0.286 63.514l-0.004 0.06q-0.3 -5.157 -0.3 -18.574t0.3 -18.574A24.9 24.9 0 0 1 26.478 0.297l-0.058 -0.005q5.157 -0.3 18.574 -0.3t18.574 0.3a24.9 24.9 0 0 1 26.13 26.194l0.004 -0.06Q90 31.578 90 45"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">Instagram</div>
+  </li>
+  <li class="icon-content">
+    <a
+      href="https://x.com/"
+      aria-label="Dribbble"
+      data-social="dribbble"
+      class="link"
+    >
+      <svg version="1.1" viewBox="0 0 100 100">
+        <path
+          d="M53.564 38.947 87.066 0h-7.941L50.033 33.816 26.801 0H0l35.136 51.137L0 91.977h7.941l30.722 -35.712 24.54 35.712H90L53.561 38.947zM42.686 51.588l-3.56 -5.093L10.8 5.977h12.194l22.86 32.699 3.56 5.093 29.714 42.503H66.935L42.686 51.591z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">Twitter</div>
+  </li>
+  <li class="icon-content">
+    <a
+      href="https://workspace.google.com/intl/uz/gmail/"
+      aria-label="Telegram"
+      data-social="telegram"
+      class="link"
+    >
+      <svg version="1.1" viewBox="0 0 100 100">
+        <path
+          d="M20 80A12 12 0 0 1 8 68v-40A12 12 0 0 1 20 16h56A12 12 0 0 1 88 28v40A12 12 0 0 1 76 80zm10.5 -47.12a4 4 0 1 0 -5.001 6.24l15.001 12.004a12 12 0 0 0 15.001 0l15.001 -12a4 4 0 1 0 -5.001 -6.247l-15.001 12a4 4 0 0 1 -5.001 0z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">Mail</div>
+  </li>
+</ul>
+
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
  </body>
  </html>

@@ -1,0 +1,186 @@
+.home{
+    &__img{
+        margin-top: 50px;
+    }
+
+    &__title{
+        color: white;
+        font-size: 28px;
+        margin-left: 16px;
+    }
+
+    &__info{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+        margin-left: 16px;
+    }
+
+    &__image{
+        margin-left: 8px;
+        margin-top: 21px;
+    }
+
+    &__cards{
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 16px;
+    }
+
+    &__card{
+        text-align: center;
+        background: rgba(38, 38, 38, 1);
+        padding: 18px 22px;
+        border-radius: 8px;
+    }
+
+    &__cardd{
+        width: 358px;
+        text-align: center;
+        background: rgba(38, 38, 38, 1);
+        border-radius: 8px;
+    }
+
+    &__of{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+    }
+
+    &__price{
+        font-size: 24px;
+    }
+
+    &__card--cards{
+        display: none;
+    }
+}
+
+@include mobile{
+    .home{
+        &__img--image{
+            display: none;
+        }
+
+        &__cards{
+            display: none;
+        }
+
+        &__card--cards{
+            color: white;
+            display: flex;
+            margin-top: 127px;
+        }
+
+        &__cards--card{
+            display: flex;
+            margin-top: 80px;
+            gap: 20px;
+            margin-left: 13px;
+        }
+
+        &__info--card{
+            background:rgba(38, 38, 38, 1);
+            border-radius: 8px;
+            padding: 0px 24px 0px 24px;
+            border: 1px solid rgba(94, 87, 87, 0.352);
+        }
+
+        &__info--card:hover{
+            box-shadow:
+          rgba(3, 66, 255, 0.25) 0px 80px 55px,
+          rgba(4, 8, 244, 0.12) 0px -12px 30px,
+          rgba(14, 1, 255, 0.12) 0px 20px 100px,
+          rgba(21, 1, 246, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px 100px 54px;
+           }
+           &__year{
+            color: rgba(153, 153, 153, 1);
+            font-size: 18px;
+        }
+
+        &__color{
+            font-size: 40px;
+        }
+
+        &__title--info{
+            color: rgba(153, 153, 153, 1);
+            margin-left: 13px;
+        }
+
+        &__our{
+            font-size: 48px;
+            margin-left: 13px;
+        }
+
+
+
+        .home__info--card {
+  width: 220px;
+  height: 160px;
+  background: linear-gradient(145deg, #1a1a1a, #222);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Glow animation */
+.home__info--card::before {
+  content: "";
+  position: absolute;
+  width: 250%;
+  height: 250%;
+  background: radial-gradient(circle, rgba(9, 66, 163, 0.626), transparent 60%);
+  top: -120%;
+  left: -120%;
+  transition: 0.5s;
+}
+
+.home__info--card:hover::before {
+  top: 0;
+  left: 0;
+}
+
+/* Hover effect */
+.home__info--card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(56, 30, 201, 0.961);
+  color: #fff;
+}
+
+/* Number */
+.home__color {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* Text */
+.home__year {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* Hover text animation */
+.home__info--card:hover .home__color {
+  color: #00ffc8;
+}
+
+.home__info--card:hover .home__year {
+  opacity: 1;
+}
+        }
+
+        
+    }

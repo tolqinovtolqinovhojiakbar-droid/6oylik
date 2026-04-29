@@ -1,0 +1,116 @@
+.story{
+
+    &__wrapper{
+        color: white;
+    }
+
+    &__title{
+        font-size: 28px;
+        margin-left: 17px;
+    }
+
+    &__info{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+        margin-left: 17px;
+    }
+
+    &__info--info{
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+    }
+
+    &__card{
+        width: 357px;
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: 17px;
+        border-radius: 10px;
+        border: 1px solid rgba(68, 60, 60, 0.323);
+        background: rgba(38, 38, 38, 0.703);
+    }
+
+    &__year{
+        font-size: 20px;
+    }
+
+    &__cards{
+        display: block;
+    }
+
+    &__card--cards{
+        display: none;
+    }
+
+    &__img{
+        display: none;
+    }
+
+    &__our{
+        display: none;
+    }
+
+    &__infos{
+        display: none;
+    }
+
+}
+
+@include mobile{
+    .story{
+        &__cards{
+            display: none;
+        }
+
+        &__infos{
+            display: block;
+            color: rgba(153, 153, 153, 1);
+            font-size: 18px;
+            margin-left: 50px;
+        }
+
+        &__our{
+            display: block;
+            font-size: 48px;
+            margin-left: 50px;
+        }
+
+        &__img{
+            display: block;
+            margin-top: 110px;
+        }
+
+        &__cardss{
+            padding: 30px;
+            border-radius: 12px;
+            background:rgba(38, 38, 38, 0.703) ;
+            border: 1px solid rgba(68, 60, 60, 0.323);
+        }
+
+        &__cardss:hover{
+            transform: scale(1.1);
+            transition: 2s;
+            box-shadow:
+          rgba(3, 66, 255, 0.25) 0px 80px 55px,
+          rgba(4, 8, 244, 0.12) 0px -12px 30px,
+          rgba(14, 1, 255, 0.12) 0px 20px 100px,
+          rgba(21, 1, 246, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px 100px 54px;
+        }
+
+        &__card--cards{
+            gap: 40px;
+            display: flex;
+            margin-top: 80px;
+            justify-content: center;
+        }
+
+        &__infoo{
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__yearr{
+            font-size: 30px;
+        }
+    }
+}

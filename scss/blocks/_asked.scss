@@ -14,13 +14,17 @@
 
     &__card{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         color: white;
-        margin-left: 36px;
     }
 
     &__cards{
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         margin-top: 30px;
     }
 
@@ -240,5 +244,66 @@
         transition: 2s;
     }
 
+
+    /* From Uiverse.io by adamgiebl */ 
+&__btn--btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  margin-left: 45px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+&__btn--btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+&__btn--btn:active {
+  transform: scale(0.9);
+}
+
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+&__btn--button {
+  position: relative;
+  display: inline-block;
+  margin-left: 55px;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+&__btn--button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+&__btn--button:active {
+  transform: scale(0.9);
+}
    }
 }

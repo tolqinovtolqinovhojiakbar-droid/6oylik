@@ -1,0 +1,361 @@
+.unlock{
+
+    &__image{
+        display: block;
+        margin-top: 61px;
+    }
+
+    &__title{
+        display: block;
+        color: white;
+        font-size: 28px;
+        margin-left: 17px;
+    }
+
+    &__info{
+        font-size: 14px;
+        display: block;
+        margin-left: 17px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__flex{
+        color: white;
+        display: flex;
+    }
+
+    &__card{
+        width: 357px;
+        margin-left: 17px;
+        margin-top: 20px;
+        padding-top: 5px;
+        padding-left: 10px;
+        border-radius: 10px;
+        background-color: rgba(5, 5, 5, 0.787);    
+        border: 1px solid rgba(255, 255, 255, 0.149);
+    }
+
+    &__dis{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__the{
+        font-size: 20px;
+        color: white;
+    }
+
+    &__btn{
+        color: white;
+        padding-left: 24px;
+        border-radius: 8px;
+        padding: 14px 119px;
+        background-color: black;
+        border: 1px solid rgba(255, 255, 255, 0.149);
+    }
+
+    &__ready{
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__cardd{
+        width: 357px;
+        margin-top: 20px;
+        display: block;
+        padding-left: 24px;
+        border-radius: 10px;
+        margin-left: 17px;
+        background-color: rgba(5, 5, 5, 0.787);    
+        border: 1px solid rgba(255, 255, 255, 0.149);
+    }
+
+    &__img{
+        display: none;
+    }
+
+    &__titlee{
+        display: none;
+    }
+
+    &__infoo{
+        display: none;
+    }
+
+    &__carddd{
+        display: none;
+    }
+}
+
+@include mobile{
+    .unlock{
+        
+        &__img{
+            width: 68px;
+            display: block;
+            margin-top: 110px;
+        }
+
+        &__image{
+            display: none;
+        }
+
+        &__title{
+            display: none;
+        }
+
+
+        &__info{
+            display: none;
+        }
+
+        &__titlee{
+            color: white;
+            display: block;
+            font-size: 48px;
+            margin-left: 37px;
+        }
+
+        &__infoo{
+            font-size: 18px;
+            display: block;
+            margin-left: 37px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__cardd{
+            display: none;
+        }
+
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__learm{
+            display: flex;
+            color: white;
+            align-items: center;
+        }
+
+        &__to{
+            font-size: 14px;
+            margin-left: 7px;
+            color:rgba(153, 153, 153, 1) ;
+        }
+
+
+         &__card{
+        width: 400px;
+        margin-left: 17px;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-left: 10px;
+        border-radius: 12px;
+        background-color: rgba(5, 5, 5, 0.787);    
+        border: 1px solid rgba(255, 255, 255, 0.149);
+        }
+
+        &__carddd{
+            width: 819px;
+            margin-top: 10px;
+            display: block;
+            margin-left: 15px;
+            border-radius: 12px;
+            background-color: rgba(5, 5, 5, 0.787);    
+            border: 1px solid rgba(255, 255, 255, 0.149);
+        }
+
+        &__cards{
+            justify-content: center;
+        }
+
+        &__today{
+            font-size: 28px;
+            margin-left: 10px;
+            color: white;
+        }
+
+        &__button{
+            color: white;
+            border-radius: 12px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-left: 150px;
+            padding: 18px 24px;
+            background-color: rgba(5, 5, 5, 0.787);    
+            border: 1px solid rgba(255, 255, 255, 0.149);
+        }
+
+        &__flex{
+            padding-top:15px;
+            margin-left: 20px;
+        }
+
+        &__dis{
+            padding-top: 10px;
+            margin-left: 20px;
+            padding-bottom: 18px;
+        }
+
+
+
+    &__card {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+/* HOVER */
+&__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(123, 47, 247, 0.4);
+}
+
+/* ICON */
+&__flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+&__flex img {
+  transition: 0.4s;
+}
+
+&__unlock__card:hover img {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* TEXT */
+&__dis {
+  margin-top: 10px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+&__card:hover .unlock__dis {
+  transform: translateX(5px);
+}
+
+
+
+ &__carddd {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+/* HOVER */
+&__carddd:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(123, 47, 247, 0.4);
+}
+
+/* ICON */
+&__flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+&__flex img {
+  transition: 0.4s;
+}
+
+&__carddd:hover img {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* TEXT */
+&__dis {
+  margin-top: 10px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+&__carddd:hover .unlock__dis {
+  transform: translateX(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+&__button {
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+&__button svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+&__button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+&__button::before,
+&__button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+&__button::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+&__button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+&__button:active {
+  transform: scale(0.95);
+}
+
+    }
+}

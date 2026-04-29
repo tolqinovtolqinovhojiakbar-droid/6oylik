@@ -1,0 +1,378 @@
+.make{
+
+    &__in{
+        margin-left: 20px;
+    }
+
+    &__title{
+        font-size: 28px;
+        color: white;
+        margin-left: 17px;
+    }
+
+    &__info{
+        font-size: 14px;
+        margin-left: 17px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__name{
+        font-size: 16px;
+        color: white;
+    }
+
+    &__input{
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background-color: rgba(40, 35, 35, 0.445);
+        padding: 16px 160px 16px 10px;
+    }
+
+    &__div{
+        width: 357px;
+        display: block;
+        margin-top: 55px;
+        margin-left: 17px;
+        border-radius: 12px;
+        padding-bottom: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.33);
+    }
+
+    &__img{
+        display: block;
+        margin-top: 50px;
+    }
+
+     &__sel{
+        color: white;
+        margin-top: 30px;
+        border-radius: 8px;
+        margin-left: 20px;
+        padding: 16px 217px 16px 10px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__sell{
+        color: white;
+        margin-top: 30px;
+        border-radius: 8px;
+        margin-left: 20px;
+        padding: 16px 230px 16px 10px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__se{
+        color: white;
+        margin-top: 30px;
+        border-radius: 8px;
+        margin-left: 20px;
+        padding: 16px 210px 16px 10px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__see{
+        color: white;
+        margin-top: 30px;
+        border-radius: 8px;
+        margin-left: 20px;
+        padding: 16px 195px 16px 10px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__chex{
+        width: 317px;
+        display: flex;
+        margin-left: 16px;
+        margin-top: 20px;
+        align-items: center;
+        border-radius: 6px;
+        padding: 14px 20px 14px 16px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+     &__pr{
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    &__location{
+        font-size: 16px;
+        color: white;
+        margin-left: 20px;
+    }
+
+
+    &__type{
+        border: none;
+        background-color: black;
+    }
+
+    &__id{
+        margin-left: 110px;
+    }
+
+    &__idd{
+        margin-left: 114px;
+    }
+
+    &__text{
+        margin-left: 20px;
+        border-radius: 6px;
+        padding: 16px 150px 54px 20px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__btn{
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 14px 97px;
+        margin-left: 19px;
+        background-color: rgba(112, 59, 247, 1);
+    }
+
+    &__nam{
+        font-weight: 500;
+        border: none;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color:rgba(153, 153, 153, 1);
+        background-color: black;
+    }
+
+    &__wo{
+        display: none;
+    }
+}
+
+@include mobile{
+    .make{
+
+        &__wo{
+            display: block;
+        }
+
+        &__info{
+            display: none;
+        }
+
+        &__title{
+            display: none;
+        }
+
+        &__div{
+            display: none;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__titlee{
+            color: white;
+            font-size: 48px;
+            margin-left: 28px;
+        }
+
+        &__infoo{
+            font-size: 18px;
+            margin-left: 28px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__divv{
+            gap: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            margin-top: 90px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__enter{
+            color: white;
+            border-radius: 8px;
+            margin-left: 15px;
+            padding: 20px 120px 20px 20px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__option{
+            color: white;
+            border-radius: 8px;
+            padding: 20px 120px 20px 20px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__optionn{
+            color: white;
+            margin-left: 220px;
+            border-radius: 8px;
+            padding: 20px 120px 20px 20px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__optio{
+            color: white;
+            margin-left: 220px;
+            border-radius: 8px;
+            padding: 20px 120px 20px 20px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__opti{
+            color: white;
+            border-radius: 8px;
+            padding: 20px 120px 20px 20px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__class{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__taypee{
+            color: white;
+        }
+
+        &__bud{
+            display: flex;
+        }
+
+        &__src{
+            display: flex;
+            color: white;
+            border-radius: 8px;
+            align-items: center;
+            padding: 16px 60px 16px 16px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__srcc{
+            display: flex;
+            color: white;
+            border-radius: 8px;
+            align-items: center;
+            padding: 18px 60px 16px 16px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__prr{
+            color: white;
+        }
+
+        &__select{
+            color: white;
+            border-radius: 8px;
+            padding: 24px 500px 20px 24px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+        
+        &__your{
+            border: none;
+            color: white;
+            background-color: rgba(40, 35, 35, 0.445);    
+        }
+
+        &__number{
+            gap: 80px;
+            display: flex;
+            margin-left: 62px;
+            align-items: center;
+        }
+
+        &__message{
+            color: white;
+        }
+
+        &__ledr{
+            color: white;
+            padding: 24px 1150px 120px 24px;
+            border-radius: 8px;
+            background-color: rgba(40, 35, 35, 0.445);    
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        /* From Uiverse.io by cssbuttons-io */ 
+&__button {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  margin-left: 140px;
+}
+
+&__button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+&__button:hover {
+  color: #fff;
+}
+
+&__button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+&__button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+&__button:active:before {
+  background: #3a0ca3;
+}
+
+     &__agerr{
+        gap:700px;
+        display: flex;
+        margin-bottom: 120px;
+        align-items: center;
+     }
+
+     &__use{
+        margin-left: 30px;
+        color: rgba(153, 153, 153, 1);
+     }
+    }
+
+}

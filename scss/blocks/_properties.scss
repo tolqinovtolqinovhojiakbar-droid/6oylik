@@ -79,9 +79,95 @@
         display: none;
     }
 
+
+
+  &__button{
+  display: flex;
+}
+
+&__button--btn{
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1px 55px;
+  margin-left: 30px;
+  background-color: rgba(112, 59, 247, 1);
+}
+
+
+&__cards {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 16px;
+    justify-content: center;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+&__card {
+    padding: 15px;
+    flex: 0 0 auto;
+    width: 500px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    margin-left: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+&__button--btn{
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1px 55px;
+  margin-left: 30px;
+  background-color: rgba(112, 59, 247, 1);
+}
+
+&__a{
+    margin-left: 20px;
+  color:rgba(153, 153, 153, 1) ;
+}
+
+&__image{
+  width: 400px;
+}
+
+&__u{
+  color: white;
+}
+
+&__info--price{
+  color: rgba(153, 153, 153, 1);
+}
+
+&__villa{
+    color: white;
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+&__ex{
+    display: block;
+    font-size: 14px;
+    margin-left: 16px;
+    color: rgba(153, 153, 153, 1);
+}
+
 }
 @include mobile{
     .properties{
+
+        &__ex{
+            display: none;
+        }
 
         &__card--cards{
             display: flex;
