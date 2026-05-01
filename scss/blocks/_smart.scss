@@ -1,0 +1,160 @@
+.smart{
+
+    &__img{
+        margin-top: 61px;
+    }
+
+    &__title{
+        color: white;
+        font-size: 28px;
+        margin-left: 17px;
+    }
+
+    &__info{
+        margin-left: 17px;
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__your{
+        color: white;
+        margin-left: 24px;
+    }
+
+    &__our{
+        margin-left: 24px;
+        font-size: 14px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__btn{
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        margin-left: 24px;
+        border-radius: 8px;
+        padding: 14px 119px;
+        background-color: black;
+        border: 1px solid white;
+    }
+
+    &__card{
+        width: 357px;
+        display: block;
+        margin-left: 17px;
+        border-radius: 10px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__image{
+        color: white;
+        display: flex;
+    }
+
+    &__infoo{
+        font-size: 12px;
+        color:rgba(153, 153, 153, 1);
+    }
+
+    &__cards{
+        width: 337px;
+        padding: 24px;
+        margin-top: 10px;
+        margin-left: 27px;
+        border-radius: 10px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    &__cardss{
+        display: block;
+    }
+
+    &__cardddd{
+        display: none;
+    }
+
+}
+
+@include mobile{
+    .smart{
+
+        &__card{
+            display: none;
+        }
+
+        &__cardss{
+            display: none;
+        }
+
+        &__inv{
+            font-size: 38px;
+            color: white;
+        }
+
+        &__real{
+            color:rgba(153, 153, 153, 1);
+        }
+        
+        &__imagee{
+            color: white;
+            display: flex;
+            padding-top: 40px;
+            padding-left: 17px;
+        }
+
+        &__inf{
+            font-size: 15px;
+            padding-left: 17px;
+            padding-top:50px;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        &__cardsss{
+        width: 423px;
+        border-radius: 12px;
+        background-color: rgba(40, 35, 35, 0.445);    
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        &__cardddd{
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 110px;
+            margin-bottom: 110px;
+            justify-content: center;
+        }
+
+
+  &__cardsss::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  background: linear-gradient(120deg, #7c3aed, #06b6d4) border-box;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, 
+                linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+&__cardsss:hover::before {
+  opacity: 1;
+}
+&__cardsss {
+  padding: 20px;
+  border-radius: 16px;
+  background: #1a1a1a;
+  transition: 0.3s;
+}
+
+&__cardsss:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+}
+    }
+}
