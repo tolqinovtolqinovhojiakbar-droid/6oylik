@@ -23,7 +23,8 @@
     }
 
     &__image{
-        margin-left: 40px;
+        width: 40px;
+
         display: block;
         margin-top: 40px;
     }
@@ -83,6 +84,7 @@
 
   &__button{
   display: flex;
+  margin-left: 10px;
 }
 
 &__button--btn{
@@ -106,9 +108,9 @@
 }
 
 &__card {
-    padding: 15px;
+    padding: 5px;
     flex: 0 0 auto;
-    width: 500px;
+    width: 50px;
     background-color: black;
     color: white;
     border-radius: 12px;
@@ -160,6 +162,8 @@
     margin-left: 16px;
     color: rgba(153, 153, 153, 1);
 }
+
+
 
 }
 @include mobile{

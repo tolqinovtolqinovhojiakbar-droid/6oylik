@@ -25,3 +25,4 @@ menu.querySelectorAll("li a").forEach((link) => {
         menuBtn.style.display = "flex";
     });
 });
+

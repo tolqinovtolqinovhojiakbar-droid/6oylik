@@ -1,4 +1,9 @@
 .footer{
+
+  &__hover:hover{
+     color: rgba(112, 59, 247, 1); 
+  }
+
   &__card{
     display: flex;
     align-items: center;
@@ -178,45 +183,31 @@
             color: white;
         }
 
-        &__color:hover{
-          color: rgba(112, 59, 247, 1);
-        }
-
-        &__color:hover{
-          color: rgba(112, 59, 247, 1);
-        }
-
+    
         &__whit{
             color: white;
         }
 
-        &__whit:hover{
-          color: rgba(112, 59, 247, 1);
-        }
+      
 
         &__proper{
             color: white;
         }
 
-        &__proper:hover{
-          color: rgba(112, 59, 247, 1);
-        }
+      
 
         &__servic{
             color: white;
         }
 
-        &__servic:hover{
-          color: rgba(112, 59, 247, 1);
-        }
+      
 
         &__contact{
             color: white;
         }
 
-        &__contact:hover{
-          color: rgba(112, 59, 247, 1);
-        }
+
+        
 
         &__cardd{
             display: flex;

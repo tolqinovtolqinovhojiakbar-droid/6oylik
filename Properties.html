@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-     <nav class="nav__header">
-        <div class="container">
+     <header class="navbar">
             <div class="nav__wrapper">
-                 <a href="./index.html"><img class="nav__img--image" src="./aseets/icon/Logo (2).svg" alt=""></a>
-                 <ul class="nav__ul">
-                    <li><a href="./index.html"><span>Home</span></a></li>
-                    <li><a href="./about.html"><span>About</span></a></li>
-                    <li><a href="./Properties.html"><span>Properties</span></a></li>
-                    <li><a href="./sevic.html"><span>Services</span></a></li>
-                 </ul>
-                <!-- From Uiverse.io by zjssun --> 
-                <button class="nav__bin">Contact Us</button>
-                 <img class="nav__img" src="./aseets/icon/Icon (1).svg" alt="">
+                <a href="./"><img class="nav__img--image" src="./aseets/icon/Logo (2).svg" alt=""></a>
+
+                <nav class="nav-container">
+                    <!-- Бургер теперь внутри nav для легкого управления через CSS -->
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span></span>
+                    </label>
+
+                    <ul class="nav-links">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./Properties.html">Properties</a></li>
+                        <li><a href="./sevic.html">Services</a></li>
+                        <li class="profile-item"></li>
+                        <button class="nav__bin">Contact Us</button>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </nav>
+        </header>
     <main>
        <section>
          <div class="find">
@@ -344,7 +350,9 @@
                             <p class="real__infos">Start Your Real Estate Journey Today</p>
                            <div class="real__cards">
                              <p class="real__just">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is <br>here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch <br>with our team for personalized assistance.</p>
-                             <button class="real__button">Explore Properties</button>
+                             <button class="real__button">
+                            <span>Explore Properties</span>
+                            </button>
                            </div>
                         </div>
                     </div>
@@ -366,36 +374,36 @@
                 <div class="footer__cards">
                     <div class="footer__card--one">
                         <p class="footer__home">home</p>
-                        <p>Hero Section</p>
-                        <p>Properties</p>
-                        <p>Testimonials</p>
-                        <p>FAQ’s</p>
+                        <p class="footer__hover">Hero Section</p>
+                        <p class="footer__hover">Properties</p>
+                        <p class="footer__hover">Testimonials</p>
+                        <p class="footer__hover">FAQ’s</p>
                     </div>
                     <div>
                         <p class="footer__about">About Us</p>
-                        <p>Our Story</p>
-                        <p>Our Works</p>
-                        <p>How It Works</p>
-                        <p>Our Team</p>
-                        <p>Our Clients</p>
+                        <p class="footer__hover">Our Story</p>
+                        <p class="footer__hover">Our Works</p>
+                        <p class="footer__hover">How It Works</p>
+                        <p class="footer__hover">Our Team</p>
+                        <p class="footer__hover">Our Clients</p>
                     </div>
                      <div>
                     <div>
                         <p class="footer__pro">Properties</p>
-                        <p>Portfolio</p>
-                        <p>Categories</p>
+                        <p class="footer__hover">Portfolio</p>
+                        <p class="footer__hover">Categories</p>
                     </div>
-                        <p class="footer__us">Contact Us</p>
-                        <p>Contact Form</p>
-                        <p>Our Offices</p>
+                        <p class="footer__hover">Contact Us</p>
+                        <p class="footer__hover">Contact Form</p>
+                        <p class="footer__hover">Our Offices</p>
                     </div>
                     <div class="footer__cardss">
                         <p class="footer__ser">Services</p>
-                        <p>Valuation Mastery</p>
-                        <p>Strategic Marketing</p>
-                        <p>Negotiation Wizardry</p>
-                        <p>Closing Success</p>
-                        <p>Property Management</p>
+                        <p class="footer__hover">Valuation Mastery</p>
+                        <p class="footer__hover">Strategic Marketing</p>
+                        <p class="footer__hover">Negotiation Wizardry</p>
+                        <p class="footer__hover">Closing Success</p>
+                        <p class="footer__hover">Property Management</p>
                     </div>
                 </div>
                 <div class="footer__infoss">
@@ -417,36 +425,36 @@
                 </div>
                 <div class="footer__color">
                         <p class="footer__home">home</p>
-                        <p>Hero Section</p>
-                        <p>Properties</p>
-                        <p>Testimonials</p>
-                        <p>FAQ’s</p>
+                        <p class="footer__hover">Hero Section</p>
+                        <p class="footer__hover">Properties</p>
+                        <p class="footer__hover">Testimonials</p>
+                        <p class="footer__hover">FAQ’s</p>
                 </div>
                 <div class="footer__whit">
                         <p class="footer__about">About Us</p>
-                        <p>Our Story</p>
-                        <p>Our Works</p>
-                        <p>How It Works</p>
-                        <p>Our Team</p>
-                        <p>Our Clients</p>
+                        <p class="footer__hover">Our Story</p>
+                        <p class="footer__hover">Our Works</p>
+                        <p class="footer__hover">How It Works</p>
+                        <p class="footer__hover">Our Team</p>
+                        <p class="footer__hover">Our Clients</p>
                 </div>
                 <div class="footer__proper">
                         <p class="footer__pro">Properties</p>
-                        <p>Portfolio</p>
-                        <p>Categories</p>
+                        <p class="footer__hover">Portfolio</p>
+                        <p class="footer__hover">Categories</p>
                 </div>
                 <div class="footer__servic">
                         <p class="footer__ser">Services</p>
-                        <p>Valuation Mastery</p>
-                        <p>Strategic Marketing</p>
-                        <p>Negotiation Wizardry</p>
-                        <p>Closing Success</p>
-                        <p>Property Management</p>
+                        <p class="footer__hover">Valuation Mastery</p>
+                        <p class="footer__hover">Strategic Marketing</p>
+                        <p class="footer__hover">Negotiation Wizardry</p>
+                        <p class="footer__hover">Closing Success</p>
+                        <p class="footer__hover">Property Management</p>
                 </div>
                 <div class="footer__contact">
                         <p class="footer__us">Contact Us</p>
-                        <p>Contact Form</p>
-                        <p>Our Offices</p>
+                        <p class="footer__hover">Contact Form</p>
+                        <p class="footer__hover">Our Offices</p>
                 </div>
             </div>
             <div>

@@ -57,25 +57,73 @@
         margin-left: 90px;
     }
 
-    &__button{
-        padding: 14px 24px;
-        background: rgba(112, 59, 247, 1);
-        border: none;
-        color: white;
-        cursor: pointer;
-        border-radius: 8px;
-        margin-left: 190px;
-    }
+    // &__button{
+    //     padding: 14px 24px;
+    //     background: rgba(112, 59, 247, 1);
+    //     border: none;
+    //     color: white;
+    //     cursor: pointer;
+    //     border-radius: 8px;
+    //     margin-left: 190px;
+    // }
 
-    &__button:hover{
-        background: rgba(112, 59, 247, 0.409);
-        transition: 2s;
-        transform: scale(1.1);
-    }
+    // &__button:hover{
+    //     background: rgba(112, 59, 247, 0.409);
+    //     transition: 2s;
+    //     transform: scale(1.1);
+    // }
+
+    
 
     &__infos{
         font-size: 48px;
         margin-left: 90px;
     }
+
+    
+    
+  .real__button {
+    margin-left: 120px;
+  position: relative;
+  padding: 14px 38px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background: #1f2937;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.real__button span {
+  position: relative;
+  z-index: 2;
+}
+
+.real__button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: rgba(112, 59, 247, 0.524);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.real__button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.real__button:active {
+  transform: scale(0.96);
+}
+
+    
     }
 }

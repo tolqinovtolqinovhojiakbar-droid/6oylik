@@ -12,24 +12,27 @@
     />
  </head>
  <body>
-    <nav class="nav__header">
-        <div class="container">
+   <header class="navbar">
             <div class="nav__wrapper">
-                 <a href="./"><img class="nav__img--image" src="./aseets/icon/Logo (2).svg" alt=""></a>
-                 <ul class="nav__ul">
-                    <li><a href="./index.html"><span>Home</span></a></li>
-                    <li><a href="./about.html"><span>About</span></a></li>
-                    <li><a href="./Properties.html"><span>Properties</span></a></li>
-                    <li><a href="./sevic.html"><span>Services</span></a></li>
-                 </ul>
-               <!-- From Uiverse.io by zjssun --> 
-               <button class="nav__bin">Contact Us</button>
+                <a href="./"><img class="nav__img--image" src="./aseets/icon/Logo (2).svg" alt=""></a>
 
-                </button>
-                 <img class="nav__img" src="./aseets/icon/Icon (1).svg" alt="">
+                <nav class="nav-container">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span></span>
+                    </label>
+
+                    <ul class="nav-links">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./Properties.html">Properties</a></li>
+                        <li><a href="./sevic.html">Services</a></li>
+                        <li class="profile-item"></li>
+                        <button class="nav__bin">Contact Us</button>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </nav>
+        </header>
     <main>
         <section class="hero">
             <div class="container">
@@ -89,7 +92,6 @@
                             <p class="hero__info--title">Your journey to finding the perfect property begins here. Explore our listings to find the <br>that matches your dreams.</p>
                            </div>
                             <div class="hero__button--btn">
-                                <!-- From Uiverse.io by gharsh11032000 --> 
                                 <button class="button">Learn More</button>
                                 <button class="hero__button">Browse Properties</button>
                             </div>
@@ -151,25 +153,6 @@
                     <p class="properties__title">Featured Properties</p>
                     <p class="properties__ex">Explore our handpicked selection of featured properties. <br>Each listing offers a glimpse into exceptional homes and <br>investments available through Estatein.</p>
                     <div class="properties__cards">
-   <div class="properties__card">
-      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
-      <p class="properties__villa">Seaside Serenity Villa</p>
-      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
-          <div class="properties__imgg">
-              <img src="./aseets/icon/Container (2).svg" alt="">
-              <img src="./aseets/icon/Container (2).svg" alt="">
-              <div>
-                <img src="./aseets/icon/Container (3).svg" alt="">
-              </div>
-          </div>
-      <div class="properties__button">
-        <div>
-        <p class="properties__info--price">Price</p>
-        <p>$550,000</p>
-      </div>
-    <button class="properties__button--btn">View Property Details</button>
-   </div>
-  </div>
    <div class="card">
       <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
       <p class="properties__villa">Seaside Serenity Villa</p>
@@ -227,25 +210,8 @@
     <button class="properties__button--btn">View Property Details</button>
    </div>
   </div>
-   <div class="card">
-      <img class="properties__image" src="./aseets/images/Image (6).svg" alt="">
-      <p class="properties__villa">Seaside Serenity Villa</p>
-      <p class="properties__a">A stunning 4-bedroom, 3-bathroom villa in a <br>peaceful suburban neighborhood... <u class="properties__u">Read More</u></p>
-          <div class="properties__imgg">
-              <img src="./aseets/icon/Container (2).svg" alt="">
-              <img src="./aseets/icon/Container (2).svg" alt="">
-              <div>
-                <img src="./aseets/icon/Container (3).svg" alt="">
-              </div>
-          </div>
-      <div class="properties__button">
-        <div>
-        <p class="properties__info--price">Price</p>
-        <p>$550,000</p>
-      </div>
-    <button class="properties__button--btn">View Property Details</button>
-   </div>
-  </div>
+  
+  
   </div>
                     <div class="properties__cardss">
                         <div>
@@ -494,7 +460,9 @@
                             <p class="real__infos">Start Your Real Estate Journey Today</p>
                            <div class="real__cards">
                              <p class="real__just">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is <br>here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch <br>with our team for personalized assistance.</p>
-                             <button class="real__button">Explore Properties</button>
+                            <button class="real__button">
+                            <span>Explore Properties</span>
+                            </button>
                            </div>
                         </div>
                     </div>
@@ -502,7 +470,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+     <footer class="footer">
         <div>
             <div class="footer__card--cards">
                 <img class="footer__info" src="./aseets/icon/Logo (3).svg" alt="">
@@ -516,36 +484,36 @@
                 <div class="footer__cards">
                     <div class="footer__card--one">
                         <p class="footer__home">home</p>
-                        <p>Hero Section</p>
-                        <p>Properties</p>
-                        <p>Testimonials</p>
-                        <p>FAQ’s</p>
+                        <p class="footer__hover">Hero Section</p>
+                        <p class="footer__hover">Properties</p>
+                        <p class="footer__hover">Testimonials</p>
+                        <p class="footer__hover">FAQ’s</p>
                     </div>
                     <div>
                         <p class="footer__about">About Us</p>
-                        <p>Our Story</p>
-                        <p>Our Works</p>
-                        <p>How It Works</p>
-                        <p>Our Team</p>
-                        <p>Our Clients</p>
+                        <p class="footer__hover">Our Story</p>
+                        <p class="footer__hover">Our Works</p>
+                        <p class="footer__hover">How It Works</p>
+                        <p class="footer__hover">Our Team</p>
+                        <p class="footer__hover">Our Clients</p>
                     </div>
                      <div>
                     <div>
                         <p class="footer__pro">Properties</p>
-                        <p>Portfolio</p>
-                        <p>Categories</p>
+                        <p class="footer__hover">Portfolio</p>
+                        <p class="footer__hover">Categories</p>
                     </div>
-                        <p class="footer__us">Contact Us</p>
-                        <p>Contact Form</p>
-                        <p>Our Offices</p>
+                        <p class="footer__hover">Contact Us</p>
+                        <p class="footer__hover">Contact Form</p>
+                        <p class="footer__hover">Our Offices</p>
                     </div>
                     <div class="footer__cardss">
                         <p class="footer__ser">Services</p>
-                        <p>Valuation Mastery</p>
-                        <p>Strategic Marketing</p>
-                        <p>Negotiation Wizardry</p>
-                        <p>Closing Success</p>
-                        <p>Property Management</p>
+                        <p class="footer__hover">Valuation Mastery</p>
+                        <p class="footer__hover">Strategic Marketing</p>
+                        <p class="footer__hover">Negotiation Wizardry</p>
+                        <p class="footer__hover">Closing Success</p>
+                        <p class="footer__hover">Property Management</p>
                     </div>
                 </div>
                 <div class="footer__infoss">
@@ -567,36 +535,36 @@
                 </div>
                 <div class="footer__color">
                         <p class="footer__home">home</p>
-                        <p>Hero Section</p>
-                        <p>Properties</p>
-                        <p>Testimonials</p>
-                        <p>FAQ’s</p>
+                        <p class="footer__hover">Hero Section</p>
+                        <p class="footer__hover">Properties</p>
+                        <p class="footer__hover">Testimonials</p>
+                        <p class="footer__hover">FAQ’s</p>
                 </div>
                 <div class="footer__whit">
                         <p class="footer__about">About Us</p>
-                        <p>Our Story</p>
-                        <p>Our Works</p>
-                        <p>How It Works</p>
-                        <p>Our Team</p>
-                        <p>Our Clients</p>
+                        <p class="footer__hover">Our Story</p>
+                        <p class="footer__hover">Our Works</p>
+                        <p class="footer__hover">How It Works</p>
+                        <p class="footer__hover">Our Team</p>
+                        <p class="footer__hover">Our Clients</p>
                 </div>
                 <div class="footer__proper">
                         <p class="footer__pro">Properties</p>
-                        <p>Portfolio</p>
-                        <p>Categories</p>
+                        <p class="footer__hover">Portfolio</p>
+                        <p class="footer__hover">Categories</p>
                 </div>
                 <div class="footer__servic">
                         <p class="footer__ser">Services</p>
-                        <p>Valuation Mastery</p>
-                        <p>Strategic Marketing</p>
-                        <p>Negotiation Wizardry</p>
-                        <p>Closing Success</p>
-                        <p>Property Management</p>
+                        <p class="footer__hover">Valuation Mastery</p>
+                        <p class="footer__hover">Strategic Marketing</p>
+                        <p class="footer__hover">Negotiation Wizardry</p>
+                        <p class="footer__hover">Closing Success</p>
+                        <p class="footer__hover">Property Management</p>
                 </div>
                 <div class="footer__contact">
                         <p class="footer__us">Contact Us</p>
-                        <p>Contact Form</p>
-                        <p>Our Offices</p>
+                        <p class="footer__hover">Contact Form</p>
+                        <p class="footer__hover">Our Offices</p>
                 </div>
             </div>
             <div>
@@ -679,8 +647,6 @@
     </footer>
     <script src="./app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
+    <script>AOS.init(); </script>
  </body>
  </html>
