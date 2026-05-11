@@ -289,6 +289,7 @@
         &__your{
             border: none;
             color: white;
+            border: 1px solid black;
             background-color: rgba(40, 35, 35, 0.445);    
         }
 
@@ -311,7 +312,7 @@
             border: 1px solid rgba(255, 255, 255, 0.09);
         }
 
-        /* From Uiverse.io by cssbuttons-io */ 
+
 &__button {
   --color: #560bad;
   font-family: inherit;

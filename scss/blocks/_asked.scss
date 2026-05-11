@@ -172,21 +172,23 @@
         gap: 10px;
     }
 
-    &__button{
-        padding: 18px 24px;
-        background: black;
-        border: 1px solid white;
-        color: white;
-        border-radius: 8px;
-        margin-left: 120px;
-        cursor: pointer;
-    }
+    // &__button{
+    //     padding: 18px 24px;
+    //     background: black;
+    //     border: 1px solid white;
+    //     color: white;
+    //     border-radius: 8px;
+    //     margin-left: 120px;
+    //     cursor: pointer;
+    // }
 
-    &__button:hover{
-         background: rgba(0, 0, 255, 0.416);
-          transform: scale(1.1);
-        transition: 2s;
-    }
+    // &__button:hover{
+    //      background: rgba(0, 0, 255, 0.416);
+    //       transform: scale(1.1);
+    //     transition: 2s;
+    // }
+
+    
 
     &__btn--button{
         padding: 18px 24px;
@@ -245,7 +247,7 @@
     }
 
 
-    /* From Uiverse.io by adamgiebl */ 
+
 &__btn--btn {
   position: relative;
   display: inline-block;
@@ -277,7 +279,7 @@
 
 
 
-/* From Uiverse.io by adamgiebl */ 
+
 &__btn--button {
   position: relative;
   display: inline-block;
@@ -304,6 +306,51 @@
 
 &__btn--button:active {
   transform: scale(0.9);
+}
+
+&__button {
+    position: relative;
+    overflow: hidden;
+    padding: 14px 20px ;
+    border: 1px solid #fff ;
+    border-radius: 18px ;
+    background: transparent ;
+    color: #fff ;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    z-index: 1;
+    margin-left: 120px;
+}
+
+
+&__button:hover {
+    background:rgba(112, 59, 247, 1) ;
+    color: #fcfbfb ;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255,255,255,0.2);
+}
+
+
+&__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transition: 0.7s;
+    z-index: -1;
+}
+
+&__button:hover::before {
+    left: 120%;
 }
    }
 }

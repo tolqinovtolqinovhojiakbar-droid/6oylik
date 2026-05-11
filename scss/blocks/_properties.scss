@@ -1,339 +1,317 @@
-.properties{
-    &__wrapper{
-        color: white;
-    }
+.properties {
+  padding: 100px 0;
+  overflow: hidden;
+}
 
-    &__info{
-        color: rgba(153, 153, 153, 1);
-        font-size: 14px;
-        margin-left: 16px;
-        display: block;
-    }
+.properties-top {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-    &__title{
-        font-size: 28px;
-        margin-left: 16px;
-        display: block;
-    }
+.properties-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
 
-    &__img{
-        margin-top: 61px;
-        padding-left: 8px;
-        display: flex;
-    }
+.properties-text {
+  max-width: 650px;
+  margin: auto;
+  color: #999;
+  line-height: 1.7;
+  font-size: 18px;
+}
 
-    &__image{
-        width: 40px;
+.properties-slider {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
 
-        display: block;
-        margin-top: 40px;
-    }
+.properties-slider::-webkit-scrollbar {
+  display: none;
+}
 
-    &__title--info{
-        margin-left: 40px;
-        font-size: 18px;
-        display: block;
-    }
+.properties-track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 
-    &__info--title{
-        margin-left: 40px;
-        font-size: 14px;
-        color: rgba(153, 153, 153, 1);
-        display: block;
-    }
+.property-card {
+  background: #16161a;
+  border: 1px solid #24242b;
+  border-radius: 20px;
+  overflow: hidden;
+  min-width: 100%;
+  transition: 0.4s;
+}
 
-    &__img--image{
-        display: block;
-        margin-left: 40px;
-        padding-top: 20px;
-    }
+.property-card:hover {
+  transform: translateY(-8px);
+  border-color: #7c3aed;
+}
 
-    &__price{
-        display: block;
-        font-size: 14px;
-        color: rgba(153, 153, 153, 1);
-    }
+.property-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
 
-    &__price--som{
-        font-size: 18px;
-        display: block;
-    }
+.property-content {
+  padding: 24px;
+  color: white;
+}
 
-    &__btn{
-        padding: 14px 35px;
-        background: rgba(112, 59, 247, 1);
-        border-radius: 8px;
-        border: none;
-        color: white;
-        display: block;
-    }
+.property-content h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
 
-    &__cards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 20px;
-    }
+.property-content p {
+  color: #999;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  font-size: 15px;
+}
 
-    &__cardss{
-        display: none;
-    }
-
-
-
-  &__button{
+.property-tags {
   display: flex;
-  margin-left: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: white;
+  margin-bottom: 24px;
 }
 
-&__button--btn{
-  color: white;
-  border: none;
+.property-tags span {
+  padding: 10px 14px;
   border-radius: 12px;
-  padding: 1px 55px;
-  margin-left: 30px;
-  background-color: rgba(112, 59, 247, 1);
+  background: #202026;
+  font-size: 14px;
 }
 
-
-&__cards {
-    display: flex;
-    gap: 32px;
-    overflow-x: auto;
-    padding: 16px;
-    justify-content: center;
-    scroll-behavior: smooth;
-    align-items: center;
+.property-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-&__card {
-    padding: 5px;
-    flex: 0 0 auto;
-    width: 50px;
-    background-color: black;
-    color: white;
-    border-radius: 12px;
-    display: flex;
-    margin-left: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+.property-bottom small {
+  color: #888;
+  display: block;
+  margin-bottom: 6px;
 }
 
+.property-bottom h4 {
+  font-size: 24px;
+}
 
-
-&__button--btn{
-  color: white;
+.property-bottom button {
   border: none;
-  border-radius: 12px;
-  padding: 1px 55px;
-  margin-left: 30px;
-  background-color: rgba(112, 59, 247, 1);
-}
-
-&__a{
-    margin-left: 20px;
-  color:rgba(153, 153, 153, 1) ;
-}
-
-&__image{
-  width: 400px;
-}
-
-&__u{
+  background: #7c3aed;
   color: white;
+  padding: 14px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
 }
 
-&__info--price{
-  color: rgba(153, 153, 153, 1);
+.property-bottom button:hover {
+  background: #6d28d9;
 }
 
-&__villa{
-    color: white;
-    font-size: 14px;
-    margin-left: 16px;
-}
-
-&__ex{
+.properties-titlee{
     display: block;
-    font-size: 14px;
-    margin-left: 16px;
+  color: white;
+  font-size: 48px;
+  margin-left: 27px;
+}
+
+.properties-infos{
+    display: block;
+    margin-left: 27px;
     color: rgba(153, 153, 153, 1);
 }
 
 
+.properties-all {
+  margin-left: 220px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border:1px solid #fff;
+    border-radius: 18px;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 
 }
-@include mobile{
-    .properties{
 
-        &__ex{
-            display: none;
-        }
 
-        &__card--cards{
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 60px;
-        }
+.properties-all:hover {
+    background: rgba(112, 59, 247, 1);
+    color: #f9f6f6;
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(255,255,255,0.2);
+}
 
-        &__u{
-            color: white;
-        }
 
-        &__button--btn{
-            padding: 14px 47px;
-            background: rgba(112, 59, 247, 1);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            margin-left: 55px;
-            cursor: pointer;
-        }
+.properties-all::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+    transition: 0.7s;
+}
 
-        &__button--btn:hover{
-            background: rgba(112, 59, 247, 0.456);
-            transition: 2s;
-        }
+.properties-all:hover::before {
+    left: 120%;
+}
 
-        &__button{
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
+.properties__btn-button{
+    display: flex;
+    margin-bottom: 110px;
+}
 
-        &__info--price{
-            font-size: 14px;
-            color: rgba(153, 153, 153, 1);
-        }
+.properties__ex{
+  display: none;
+}
 
-        &__villa{
-            font-size: 20px;
-        }
+.properties__title{
+  display: none;
+}
 
-        &__a{
-            color: rgba(153, 153, 153, 1);
-            font-size: 16px;
-        }
+.properties__aseets{
+  display: none;
+}
 
-        &__card--btn{
-            border: 1px solid white ;
-            background-color: black;
-            border-radius: 12px;
-            width: 413px;
-            padding: 30px;
-        }
+@media (max-width: 390px) {
 
-        &__card--btn:hover{
-            transform: scale(0.9);
-            transition: 2s;
-            box-shadow:
-        rgba(3, 66, 255, 0.25) 0px 80px 55px,
-        rgba(4, 8, 244, 0.12) 0px -12px 30px,
-        rgba(14, 1, 255, 0.12) 0px 20px 100px,
-        rgba(21, 1, 246, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px 100px 54px;
-        }
 
-        &__all{
-            padding: 14px 20px;
-            background-color: black;
-            border: 1px solid white;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+  .properties__aseets{
+    display: block;
+  }
 
-        &__all:hover{
-            transform: scale(1.1);
-            transition: 2s;
-            background: rgba(0, 0, 255, 0.355);
-        }
-
-        &__btn--button{
-            display: flex;
-            gap: 150px;
-        }
-
-        &__infos{
-            font-size: 16px;
-            margin-top:10px ;
-            margin-left: 80px;
-            color: rgba(153, 153, 153, 1);
-        }
-
-        &__titlee{
-            font-size: 38px;
-            margin-left: 80px;
-            margin-top: 6px;
-        }
-
-        &__design{
-            margin-top: 90px;
-            margin-left: 70px;
-        }
-
-        &__cardss{
-            display: block;
-        }
-
-        &__img--image{
-            display: none;
-        }
-
-        &__info{
-            display: none;
-        }
-
-        &__title{
-            display: none;
-        }
-
-        &__img{
-            display: none;
-        }
-
-        &__image{
-            display: none;
-        }
-
-         &__title--info{
-            display: none;
-         }
-
-        &__info--title{
-            display: none;
-        }
-
-        &__imag--image{
-            display: none;
-        }
-
-        &__price{
-            display: none;
-        }
-
-        &__price--som{
-            display: none;
-        }
-
-        &__btn{
-            display: none;
-        }
-
-        &__cards{
-            display: none;
-        }
-
-        &__img{
-            display: none;
-        }
-
-        &__info{
-            display: none;
-        }
+    .properties-svg{
+        display: none;
     }
+
+    .properties-titlee{
+        display: none;
+    }
+
+     .properties-infos{
+        display: none;
+     }
+
+    .properties__btn-button{
+    display: none;
+    }
+
+    .properties__title{
+        display: block;
+        font-size: 28px;
+        color: white;
+        margin-left: 17px;
+    }
+
+
+    .properties__ex{
+        font-size: 14px;
+        display: block;
+        margin-left: 17px;
+        margin-bottom: 50px;
+        color:rgba(153, 153, 153, 1); 
+    }
+
+  .properties {
+    padding: 70px 0;
+  }
+
+  .properties-top {
+    margin-bottom: 40px;
+  }
+
+  .properties-title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .properties-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .properties-track {
+    display: flex;
+    gap: 20px;
+  }
+
+  .properties-slider {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .properties-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .property-card {
+    width: 100%;
+    min-width: 100%;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 32px;
+  }
+
+  .property-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 32px 32px 0 0;
+  }
+
+  .property-content {
+    padding: 20px;
+  }
+
+  .property-content h3 {
+    font-size: 20px;
+  }
+
+  .property-content p {
+    font-size: 14px;
+  }
+
+  .property-bottom {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .property-bottom button {
+    width: 100%;
+  }
+
+  .property-image{
+    border-radius: 100px;
+  }
 }
