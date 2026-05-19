@@ -102,6 +102,10 @@
         display: none;
     }
 
+    .say-button {
+       display: none;
+    }
+
 }
 
 @include mobile{
@@ -192,6 +196,7 @@
        
 
         .say-button {
+            display: block;
     display: inline-flex;
     align-items: center;
     justify-content: center;

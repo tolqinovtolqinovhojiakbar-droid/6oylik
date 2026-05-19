@@ -22,6 +22,7 @@
     }
 
     &__input{
+        color: white;
         border-radius: 8px;
         border: 1px solid rgba(255, 255, 255, 0.09);
         background-color: rgba(40, 35, 35, 0.445);
@@ -122,6 +123,7 @@
     }
 
     &__text{
+        color: white;
         margin-left: 20px;
         border-radius: 6px;
         padding: 16px 150px 54px 20px;
@@ -130,7 +132,6 @@
     }
 
     &__btn{
-        color: white;
         border: none;
         border-radius: 6px;
         padding: 14px 97px;

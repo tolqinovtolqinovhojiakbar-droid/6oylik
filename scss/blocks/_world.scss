@@ -6,7 +6,7 @@
 
     &__info{
         font-size: 14px;
-        margin-left: 17px;
+        padding-left: 18px;
         color: rgba(153, 153, 153, 1);
     }
 
@@ -121,14 +121,14 @@
   position: relative;
 }
 
-/* Hover */
+
 &__card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(138, 75, 255, 0.4);
   border: 1px solid rgba(138, 75, 255, 0.6);
 }
 
-/* Glow effect */
+
 &__card::before {
   content: "";
   position: absolute;
@@ -142,7 +142,7 @@
   opacity: 1;
 }
 
-/* Image */
+
 
 &__image {
   width: 100%;
@@ -154,21 +154,21 @@
   transform: scale(1.1);
 }
 
-/* Title */
+
 &__aeas {
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
 }
 
-/* Description */
+
 &__info {
   color: #aaa;
   font-size: 14px;
   margin: 10px 0;
 }
 
-/* Price block */
+
 &__div {
   display: flex;
   justify-content: space-between;
@@ -180,7 +180,7 @@
   font-weight: bold;
 }
 
-/* Button */
+
 &__btn {
   background: linear-gradient(45deg, #7a3cff, #b084ff);
   border: none;
@@ -264,14 +264,14 @@
   position: relative;
 }
 
-/* Hover */
+
 &__card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(138, 75, 255, 0.4);
   border: 1px solid rgba(138, 75, 255, 0.6);
 }
 
-/* Glow effect */
+
 &__card::before {
   content: "";
   position: absolute;
@@ -285,7 +285,7 @@
   opacity: 1;
 }
 
-/* Image */
+
 
 &__image {
   width: 100%;
@@ -297,21 +297,21 @@
   transform: scale(1.1);
 }
 
-/* Title */
+
 &__aeas {
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
 }
 
-/* Description */
+
 &__info {
   color: #aaa;
   font-size: 14px;
   margin: 10px 0;
 }
 
-/* Price block */
+
 &__div {
   display: flex;
   justify-content: space-between;
@@ -323,7 +323,7 @@
   font-weight: bold;
 }
 
-/* Button */
+
 &__btn {
   background: linear-gradient(45deg, #7a3cff, #b084ff);
   border: none;

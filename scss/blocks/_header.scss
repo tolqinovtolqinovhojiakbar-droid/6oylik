@@ -1,12 +1,9 @@
 .nav{
-
-
-    .navbar {
+     .navbar {
     z-index: 1;
     position: sticky;
     top: 0;
-     animation: headAnim 1.3s ease-in-out forwards;
-
+    animation: headAnim 1.3s ease-in-out forwards;
     position: sticky;
     padding: 10px 5%;
 }
@@ -72,6 +69,7 @@
     z-index: 1;
     color: white;
     background-color: black;
+    border-radius: 100px;
 }
 
 
@@ -179,11 +177,11 @@
     
 
     &__wrapper{
-        padding: 20px 16px;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        display: flex;
+    display: flex;
+    padding: 20px 16px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
     }
 
     &__ul{

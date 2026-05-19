@@ -18,13 +18,14 @@
     }
     
     &__btn{
-        top: 380px;
-        right: 62px;
+        top: 381px;
+        right: 63px;
         position: absolute;
         border-radius: 100px;
     }
 
     &__inp{
+        color: white;
         margin-bottom: 20px;
         background: black;
         border-radius: 100px;
@@ -186,6 +187,14 @@
             display: block;
             margin-left: 50px;
             color: rgba(153, 153, 153, 1);
+        }
+
+        &__btn{
+        top: 366px;
+        width: 47px;
+        right: 63px;
+        position: absolute;
+        border-radius: 100px;
         }
         
     }
